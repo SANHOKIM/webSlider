@@ -22,7 +22,7 @@ $(document).ready(function(){
     // $(옮길태그).appendTo($(부모가될태그))
 
 // const aniw = $(".swiper-slide").width(); height 해보려고 주석함
-const aniw = $(".swiper-slide").height(); 
+const aniw = $(".swiper-slide").width(); 
 
 // const aniw = $(".swiper-slide").css("width"); jquery는 규칙이 없으니 위에처럼도 쓰이는거다. 값을 넣으면 그 값이 들어가고 값이 없으면 가져오는 것. "width"를 가져오는 것.
 
@@ -30,9 +30,9 @@ const aniw = $(".swiper-slide").height();
 
     setInterval(function() {
 
-        $(".swiper-wrapper").animate({"marginTop" : -aniw } , 400, function () { 
+        $(".swiper-wrapper").animate({"marginWidth" : -aniw } , 400, function () { 
 $ (".swiper-slide").eq(0).appendTo($(".swiper-wrapper"))
-            $(".swiper-wrapper").css("marginTop", 0)
+            $(".swiper-wrapper").css("marginWidth", 0)
         })
 
     },3000)
