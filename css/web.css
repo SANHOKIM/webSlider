@@ -1,5 +1,3 @@
-
-
 * {
     margin: 0;
     padding: 0;
@@ -18,11 +16,11 @@ a:hover {
     background-color: gray;
 }
 
-.position-rel {
+.rel {
     position: relative;
 }
 
-.position-abs {
+.abs {
     position: absolute;
 }
 
@@ -58,7 +56,7 @@ a:hover {
     height: 200px;
 }
 
-.w-100{
+.w-100 {
     width: 100px;
 }
 
@@ -75,7 +73,7 @@ a:hover {
     width: 100000px;
 }
 
-.red { 
+.red {
     background-color: red;
 }
 
@@ -87,12 +85,12 @@ a:hover {
     background-color: green;
 }
 
-.swiper-slide{ 
-    opacity :0;
+.swiper-slide {
+    opacity: 0;
     transition: 0.5s;
 }
 
 .on.swiper-slide {
-    opacity : 1;
+    opacity: 1;
     z-index: 10000;
 }
