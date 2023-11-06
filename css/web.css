@@ -57,7 +57,11 @@ a:hover {
 }
 
 .w-100 {
-    width: 100px;
+    width: 100%;
+}
+
+.w33 {
+    width: 33.3333%;
 }
 
 .w1200 {
@@ -85,7 +89,7 @@ a:hover {
     background-color: green;
 }
 
-.swiper-slide {
+/* .swiper-slide {
     opacity: 0;
     transition: 0.5s;
 }
@@ -93,4 +97,17 @@ a:hover {
 .on.swiper-slide {
     opacity: 1;
     z-index: 10000;
+} */
+
+#popup {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    border: 1px solid greenyellow;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
 }
