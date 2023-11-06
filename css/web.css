@@ -58,11 +58,6 @@ a:hover {
     height: 200px;
 }
 
-.container {
-    width: 1200px;
-    margin: 0 auto;
-}
-
 .w-100{
     width: 100px;
 }
@@ -90,4 +85,14 @@ a:hover {
 
 .green {
     background-color: green;
+}
+
+.swiper-slide{ 
+    opacity :0;
+    transition: 0.5s;
+}
+
+.on.swiper-slide {
+    opacity : 1;
+    z-index: 10000;
 }

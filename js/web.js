@@ -22,19 +22,23 @@ $(document).ready(function(){
     // $(옮길태그).appendTo($(부모가될태그))
 
 // const aniw = $(".swiper-slide").width(); height 해보려고 주석함
-const aniw = $(".swiper-slide").width(); 
+// const aniw = $(".swiper-slide").height();  좌우 상하 다음 세번째꺼 하려고 주석함
 
 // const aniw = $(".swiper-slide").css("width"); jquery는 규칙이 없으니 위에처럼도 쓰이는거다. 값을 넣으면 그 값이 들어가고 값이 없으면 가져오는 것. "width"를 가져오는 것.
 
 // 전자는 숫자 후자는 문자로 받아요. (css("width")는 문자로 받아 짜증난다던데 이유는 샘께 한번더 물어보기 )
 
-    setInterval(function() {
+let count = 0;
 
-        $(".swiper-wrapper").animate({"marginWidth" : -aniw } , 400, function () { 
-$ (".swiper-slide").eq(0).appendTo($(".swiper-wrapper"))
-            $(".swiper-wrapper").css("marginWidth", 0)
-        })
+    setInterval(function() {  
 
+//         $(".swiper-wrapper").animate({"marginTop" : -aniw } , 400, function () {  좌우 상하 다음 세번째꺼 하려고 주석함
+// $ (".swiper-slide").eq(0).appendTo($(".swiper-wrapper")) 좌우 상하 다음 세번째꺼 하려고 주석함
+//             $(".swiper-wrapper").css("marginTop", 0) 좌우 상하 다음 세번째꺼 하려고 주석함
+//         })               좌우 상하 다음 세번째꺼 하려고 주석함
+        count++; // 순환 코드는 몫을 구한 후 남은 나머지 식에서 나온 것이예요.
+        count = count % 3;
+        $(".swiper-slide").eq(count).addClass("on").siblings().removeClass("on")
     },3000)
 
 })
